@@ -23,7 +23,7 @@ public class SkillDAO
         //to pass this type of statements to the data base ,first of all we should create Statements
 		Statement stmt=  con.createStatement();
 		
-		ResultSet rs =stmt.executeQuery("select * from skills order by skillName asc ");
+		ResultSet rs =stmt.executeQuery("select * from skill order by skillName asc ");
 		
 		while(rs.next())
 		{
